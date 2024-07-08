@@ -1,0 +1,1628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Home 2</title>
+
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- BootStrap File -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Main Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/PATH/flag-icons.min.css" />
+    <!-- Link cdn swiper js -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    /> -->
+    <link
+    rel="stylesheet"
+    href="css/swiper-bundle.min.css"
+  />
+  </head>
+  <body>
+    <main>
+      <!-- start second section -->
+      <section class="my-4">
+        <div class="container second-sec">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-9 d-flex align-content-around">
+              <div class="d-flex align-items-center logo-image">
+                <img src="Lap images/logo.svg" alt="" class="" />
+              </div>
+              <input
+                type="text"
+                class="form-control input w-50 me-5 mx-4"
+                placeholder="Search For Products"
+              />
+
+              <!-- Button trigger modal -->
+              <div class="position-relative popup">
+                <input
+                  value="Location"
+                  type="button"
+                  class="btn border px-5"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                  id="location"
+                />
+                <i
+                  class="fa-solid fa-location-dot position-absolute top-50 translate-middle location-icon"
+                ></i>
+              </div>
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header d-block">
+                      <div class="d-flex">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                          Choose your Delivery Location
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <p class="w-100">
+                        Enter your address and we will specify the offer you
+                        area.
+                      </p>
+                    </div>
+
+                    <div class="modal-body">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Search Your Area"
+                      />
+                      <div
+                        class="d-flex justify-content-between align-items-center my-4"
+                      >
+                        <p>Select Location</p>
+                        <button class="btn btn-outline-success">
+                          clear All
+                        </button>
+                      </div>
+                      <ul>
+                        <li class="border-top py-3">
+                          <span>Alaska</span>
+                          <span class="float-end">Min:$20</span>
+                        </li>
+                        <li class="border-top py-3">
+                          <span>Arizona</span>
+                          <span class="float-end">Min:$50</span>
+                        </li>
+                        <li class="border-top py-3">
+                          <span>California</span>
+                          <span class="float-end">Min:$100</span>
+                        </li>
+                        <li class="border-top py-3">
+                          <span>Florida</span>
+                          <span class="float-end">Min:$70</span>
+                        </li>
+                        <li class="border-top py-3">
+                          <span>Alabama</span>
+                          <span class="float-end">Min:$80</span>
+                        </li>
+                        <li class="border-top py-3">
+                          <span>Colorado</span>
+                          <span class="float-end">Min:$90</span>
+                        </li>
+                        <li class="clearfix"></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="modal-icons text-end">
+                <i class="fa-regular fa-heart"></i>
+                <i
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal-1"
+                  class="fa-regular fa-user"
+                ></i>
+                <i class="fa-solid fa-box"></i>
+                <button
+                  class="btn"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasScrolling"
+                  aria-controls="offcanvasScrolling"
+                >
+                  <i class="fa-solid fa-bars fs-4"></i>
+                </button>
+              </div>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal-1"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Sign Up
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <label for="Name" class="form-label">Name</label>
+                      <input
+                        type="text"
+                        name="Name"
+                        id="Name"
+                        class="form-control"
+                        placeholder="Enter You Name"
+                      />
+                      <label for="Email" class="form-label mt-2">Email</label>
+                      <input
+                        type="email"
+                        name="Email"
+                        id="Email"
+                        class="form-control"
+                        placeholder="Enter You Email"
+                      />
+                      <label for="Password" class="form-label mt-2"
+                        >Password</label
+                      >
+                      <input
+                        type="password"
+                        name="Password"
+                        id="Password"
+                        class="form-control"
+                        placeholder="Enter You Password"
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-success" data-bs-dismiss="modal">
+                        Submit
+                      </button>
+                    </div>
+                    <p class="text-center pb-5">
+                      Already have an account?
+                      <span class="text-success">Sign in</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- side Nav Bar bar -->
+              <div
+                class="offcanvas offcanvas-start"
+                data-bs-scroll="true"
+                data-bs-backdrop="false"
+                tabindex="-1"
+                id="offcanvasScrolling"
+                aria-labelledby="offcanvasScrollingLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                    <img src="Lap images/logo.svg" alt="" />
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Search For Products"
+                  />
+
+                  <!-- Button trigger modal -->
+                  <!-- Location -->
+                  <div class="position-relative">
+                    <input
+                      value="Location"
+                      type="button"
+                      class="btn border px-5 w-100 my-2"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    />
+                    <i
+                      class="fa-solid fa-location-dot position-absolute top-50 translate-middle"
+                    ></i>
+                  </div>
+                  <!-- End Location -->
+                  <!-- Collapse -->
+                  <!-- Collapse -->
+                  <button
+                    class="btn btn-success w-100 my-3"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    All Departments
+                  </button>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      <p>Dairy , Bread & Eggs</p>
+                      <p>Dairy , Bread & Eggs</p>
+                      <p>Dairy , Bread & Eggs</p>
+                      <p>Dairy , Bread & Eggs</p>
+                      <p>Dairy , Bread & Eggs</p>
+                      <p>Dairy , Bread & Eggs</p>
+                    </div>
+                  </div>
+                  <!-- End Collapse -->
+                  <!-- Start Drop Down -->
+                  <div class="dropdown-2 bg-transparent border-top py-2">
+                    <button
+                      class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Home
+                    </button>
+                    <ul class="dropdown-menu w-75">
+                      <li class="w-100">
+                        <a class="dropdown-item" href="index.html">Home 1</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="Home2.html">Home 2</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 3</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 4</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 5</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-2 bg-transparent border-top py-2">
+                    <button
+                      class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Shop
+                    </button>
+                    <ul class="dropdown-menu w-75">
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 1</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 2</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 3</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 4</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 5</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-2 bg-transparent border-top py-2">
+                    <button
+                      class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Store
+                    </button>
+                    <ul class="dropdown-menu w-75">
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 1</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 2</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 3</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 4</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 5</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-2 bg-transparent border-top py-2">
+                    <button
+                      class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Mega Menu
+                    </button>
+                    <ul class="dropdown-menu w-75">
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 1</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 2</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 3</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 4</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 5</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-2 bg-transparent border-top py-2">
+                    <button
+                      class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Pages
+                    </button>
+                    <ul class="dropdown-menu w-75">
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 1</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 2</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 3</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 4</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 5</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-2 bg-transparent border-top py-2">
+                    <button
+                      class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Account
+                    </button>
+                    <ul class="dropdown-menu w-75">
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 1</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 2</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 3</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 4</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 5</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown-2 bg-transparent border-top py-2">
+                    <button
+                      class="btn dropdown-toggle w-100 d-flex justify-content-between align-items-center"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dashboard
+                    </button>
+                    <ul class="dropdown-menu w-75">
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 1</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 2</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 3</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 4</a>
+                      </li>
+                      <li class="w-100">
+                        <a class="dropdown-item" href="#">Home 5</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- End Drop Down -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End second section -->
+
+      <!-- start nav bar -->
+      <nav class="navbar navbar-expand-lg nav-home-2">
+        <div class="container">
+          <div class="dropdown">
+            <button
+              class="btn btn-success"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <p class="text-white">All Department</p>
+            </button>
+            <ul class="dropdown-menu card-body">
+              <p>Bread & Eggs</p>
+              <p>Fruits & Vegetables</p>
+              <p>Cold Drinks & Juices</p>
+              <p>Breakfast & Instant Food</p>
+              <p>Bakery & Biscuits</p>
+              <p>Chicken, Meat & Fish</p>
+            </ul>
+          </div>
+          <div
+            class="collapse navbar-collapse ms-4"
+            id="navbarSupportedContent"
+          >
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Home
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+                <li>
+                  <a class="dropdown-item" href="Home2.html" target="_blank"
+                    >Home 2</a
+                  >
+                </li>
+                <li><a class="dropdown-item" href="#">Home 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Shop
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Shop 1</a></li>
+                <li><a class="dropdown-item" href="#">Shop 2</a></li>
+                <li><a class="dropdown-item" href="#">Shop 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Stores
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Stores 1</a></li>
+                <li><a class="dropdown-item" href="#">Stores 2</a></li>
+                <li><a class="dropdown-item" href="#">Stores 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pages
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Pages 1</a></li>
+                <li><a class="dropdown-item" href="#">Pages 2</a></li>
+                <li><a class="dropdown-item" href="#">Pages 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class="dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Acount
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Acount 1</a></li>
+                <li><a class="dropdown-item" href="#">Acount 2</a></li>
+                <li><a class="dropdown-item" href="#">Acount 3</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class=""
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dashboard
+              </a>
+            </div>
+
+            <div class="dropdown">
+              <a
+                class=""
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Docs
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End nav bar -->
+
+      <!-- Start section About -->
+      <section class="container my-5">
+        <div
+          class="about d-flex justify-content-between align-items-center px-3"
+        >
+          <div class="about-content d-flex align-items-center">
+            <div class="about-image">
+              <img src="Lap images/Home2/about-icons-1.svg" alt="" />
+            </div>
+            <div class="content text-center">
+              <h3>Welcome to FreshCart</h3>
+              <p>
+                Download the app get free food &
+                <span class="text-success">$30</span> off on your first order.
+              </p>
+            </div>
+          </div>
+          <button class="btn btn-dark">DownLoad FreshCart App</button>
+        </div>
+      </section>
+      <!-- End section About -->
+
+      <!-- start Section Banner -->
+      <div class="container my-5">
+        <div
+          class="row gy-3 justify-content-sm-center justify-content-md-between"
+        >
+          <div class="col-lg-4 col-md-6">
+            <div class="banner position-relative">
+              <div class="banner-image">
+                <img
+                  src="Lap images/Home2/ad-banner-1.jpg"
+                  alt=""
+                  class="rounded swiper-slide w-100"
+                />
+              </div>
+              <div class="banner-content position-absolute top-0 start-0 m-3">
+                <h3 class="h5">10% cashback on</h3>
+                <h3 class="h5">personal care</h3>
+                <p class="text-secondary">Max cashback: $12</p>
+                <p class="text-secondary">
+                  Code: <span class="text-dark">CARE12</span>
+                </p>
+                <button class="btn btn-dark mt-3">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="banner position-relative">
+              <div class="banner-image">
+                <img
+                  src="Lap images/Home2/ad-banner-2.jpg"
+                  alt=""
+                  class="rounded swiper-slide w-100"
+                />
+              </div>
+              <div class="banner-content position-absolute top-0 start-0 m-3">
+                <h3 class="h5">10% cashback on</h3>
+                <h3 class="h5">personal care</h3>
+                <p class="text-secondary">Max cashback: $12</p>
+                <p class="text-secondary">
+                  Code: <span class="text-dark">CARE12</span>
+                </p>
+                <button class="btn btn-dark mt-3">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="banner position-relative">
+              <div class="banner-image">
+                <img
+                  src="Lap images/Home2/ad-banner-3.jpg"
+                  alt=""
+                  class="rounded swiper-slide w-100"
+                />
+              </div>
+              <div class="banner-content position-absolute top-0 start-0 m-3">
+                <h3 class="h5">10% cashback on</h3>
+                <h3 class="h5">personal care</h3>
+                <p class="text-secondary">Max cashback: $12</p>
+                <p class="text-secondary">
+                  Code: <span class="text-dark">CARE12</span>
+                </p>
+                <button class="btn btn-dark mt-3">Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Section Banner -->
+
+      <!-- start Categories -->
+      <section class="container overflow-hidden my-5">
+        <h4>Shop by Category</h4>
+        <div class="row mt-4 gy-4 justify-content-center">
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-1.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-2.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-4.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-5.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-5.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-4.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-2.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-1.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-1.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-2.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-4.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="category border text-center p-2 rounded swiper-slide" data-swiper-autoplay="1500">
+              <img class="w-100" src="Lap images/product-img-5.jpg" alt="" />
+              <p>Dairy , beard & Eggs</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Categories -->
+
+      <!-- start Section Products -->
+  
+      <!-- End Section Products -->
+        <div class="container swiper swiper-1">
+          <div class="d-flex justify-content-between align-items-center position-relative">
+            <div class="product-content">
+              <h3>Fruits & vegetables</h3>
+              <p>eat fresh, stay healthy</p>
+            </div>
+            <div class="product-icon">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <div class="slider-swiper mt-3">
+            <div class="list swiper-wrapper mb-5">
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 1.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 2.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 3.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 4.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 5.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 1.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 2.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 3.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 4.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                  <img src="Lap images/Home2/fruit 5.jpg" alt="" />
+                  <div class="item-content">
+                    <p>Snack & Munchies</p>
+                    <p class="text-success">Haldiram's Sev Bhujia</p>
+                    <div class="item-icons">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i
+                        class="fa-regular fa-star-half-stroke text-warning"
+                      ></i>
+                      <span class="text-secondary"> 4.5 (189)</span>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between align-items-center mt-2"
+                    >
+                      <div>
+                        <p>$18 <del class="text-secondary">$24</del></p>
+                      </div>
+                      <button class="btn btn-success">
+                        <i class="fa-solid fa-plus"></i> Add
+                      </button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+           
+          </div>
+        </div>
+      <!-- start Section Products-2 -->
+      <div class="container swiper swiper-2 my-5">
+        <div class="d-flex justify-content-between align-items-center position-relative">
+          <div class="product-content">
+            <h3>Breakfast & dairy</h3>
+            <p>butter, cheese, milk, curd and more</p>
+          </div>
+          <div class="product-icon">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+        <div class="slider-swiper mt-3">
+          <div class="list swiper-wrapper mb-5">
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 1.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 2.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 3.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 4.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 5.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 1.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 2.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 3.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 4.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="item border p-3 rounded swiper-slide" data-swiper-autoplay="1500">
+                <img src="Lap images/Home2/break 5.jpg" alt="" />
+                <div class="item-content">
+                  <p>Snack & Munchies</p>
+                  <p class="text-success">Haldiram's Sev Bhujia</p>
+                  <div class="item-icons">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i
+                      class="fa-regular fa-star-half-stroke text-warning"
+                    ></i>
+                    <span class="text-secondary"> 4.5 (189)</span>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <p>$18 <del class="text-secondary">$24</del></p>
+                    </div>
+                    <button class="btn btn-success">
+                      <i class="fa-solid fa-plus"></i> Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="swiper-pagination"></div>
+         
+        </div>
+      </div>
+      <!-- End Section Products-2 -->
+
+      <!-- start section Contact -->
+      <section class="container my-5">
+        <div
+          class="row border-top border-bottom py-5 align-items-center contact"
+        >
+          <div class="col-md-6">
+            <div class="iphone text-end me-5">
+              <img
+                src="Lap images/Home2/iphone-2.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact">
+              <h2>Get the FreshCart app</h2>
+              <p>
+                We will send you a link, open it on your phone to download the
+                app.
+              </p>
+              <form action="" class="">
+                <div class="check d-flex align-items-center">
+                  <div class="form-check my-4 d-flex align-items-center">
+                    <input
+                      class="form-check-input me-1"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault1"
+                    />
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Default radio
+                    </label>
+                  </div>
+                  <div class="form-check d-flex align-items-center">
+                    <input
+                      class="form-check-input ms-4 me-1"
+                      type="radio"
+                      name="flexRadioDefault"
+                      id="flexRadioDefault2"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Default checked radio
+                    </label>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <input
+                    type="email"
+                    class="form-control w-50"
+                    placeholder="Phone"
+                  />
+                  <button class="btn btn-success my-3 ms-3">
+                    Share App Link
+                  </button>
+                </div>
+
+                <p class="my-3">Download app from</p>
+                <img src="Lap images/googleplay-btn.svg" alt="" />
+                <img src="Lap images/appstore-btn.svg" alt="" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End section Contact -->
+
+      <!-- start section Prices  -->
+      <section class="container my-5">
+        <div class="row gy-2">
+          <div class="col-lg-3 col-md-6">
+            <div class="items border rounded swiper-slide p-3">
+              <i class="fa-regular fa-clock fa-2x text-success"></i>
+              <h6 class="my-3">10 minute grocery now</h6>
+              <p class="text-secondary">
+                Get your order delivered to your doorstep at the earliest from
+                FreshCart pickup stores near you.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="items border rounded swiper-slide p-3">
+              <i class="fa-solid fa-gift fa-2x text-success"></i>
+              <h6 class="my-3">Best Prices & Offers</h6>
+              <p class="text-secondary">
+                Get your order delivered to your doorstep at the earliest from
+                FreshCart pickup stores near you.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="items border rounded swiper-slide p-3">
+              <i class="fa-solid fa-box-open fa-2x text-success"></i>
+              <h6 class="my-3">Wide Assortment</h6>
+              <p class="text-secondary">
+                Get your order delivered to your doorstep at the earliest from
+                FreshCart pickup stores near you.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="items border rounded swiper-slide p-3">
+              <i class="fa-solid fa-rotate fa-2x text-success"></i>
+              <h6 class="my-3">Easy Returns</h6>
+              <p class="text-secondary">
+                Get your order delivered to your doorstep at the earliest from
+                FreshCart pickup stores near you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End section Prices  -->
+
+      <!-- start Footer -->
+      <footer class="container-fluid">
+        <div class="container py-5">
+          <div class="row gy-4 justify-content-between">
+            <div class="col-lg-2 col-md-4">
+              <p class="h6 mb-3">Categories</p>
+              <ul>
+                <li>Vegetables & Fruits</li>
+                <li>Breakfast</li>
+                <li>Bakery & Biscuits</li>
+                <li>Vegetables & Fruits</li>
+                <li>Atta, rice & dal</li>
+                <li>Sauces & spreads</li>
+                <li>Baby care</li>
+                <li>Cleaning essentials</li>
+                <li>Personal care</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <ul>
+                <p class="h6 mb-3 opacity-0">Categories</p>
+                <li>Vegetables & Fruits</li>
+                <li>Breakfast</li>
+                <li>Bakery & Biscuits</li>
+                <li>Vegetables & Fruits</li>
+                <li>Atta, rice & dal</li>
+                <li>Sauces & spreads</li>
+                <li>Baby care</li>
+                <li>Cleaning essentials</li>
+                <li>Personal care</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <ul>
+                <p class="h6 mb-3">Get to know us</p>
+                <li>Company</li>
+                <li>About us</li>
+                <li>Blog</li>
+                <li>Help Center</li>
+                <li>our Value</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <ul>
+                <p class="h6 mb-3">For Consumers</p>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Product Returns</li>
+                <li>FAQ</li>
+                <li>Shop Checkout</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <ul>
+                <p class="h6 mb-3">Become a Shopper</p>
+                <li>Shopper Opportunit</li>
+                <li>Become a Shopper</li>
+                <li>Earnings</li>
+                <li>Ideas & Guides</li>
+                <li>New Retailers</li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4">
+              <ul>
+                <p class="h6 mb-3">Freshcart programs</p>
+                <li>Freshcart programs</li>
+                <li>Gift Cards</li>
+                <li>Promos & Coupons</li>
+                <li>Freshcart</li>
+                <li>Careers</li>
+              </ul>
+            </div>
+          </div>
+          <div class="app-payment row my-3 py-3 border-bottom border-top">
+            <div class="col-md-6">
+              <div class="payment">
+                <span class="me-3">Payment Partners</span>
+                <img src="Lap images/american-express.svg" alt="" />
+                <img src="Lap images/visa.svg" alt="" />
+                <img src="Lap images/paypal.svg" alt="" />
+                <img src="Lap images/mastercard.svg" alt="" />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="app-store d-flex float-end">
+                <img src="Lap images/googleplay-btn.svg" alt="" />
+                <img src="Lap images/appstore-btn.svg" alt="" />
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+
+          <div
+            class="row foot-contact justify-content-center align-items-center"
+          >
+            <div class="col-md-6">
+              <div class="copy-right">
+                © 2022 - 2024 FreshCart eCommerce HTML Template. All rights
+                reserved. Powered by
+                <span class="text-success">Codescandy</span>.
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="footer-icon  text-end ">
+                <span class="text-success me-5">Follow Us</span>
+               <div class="d-flex justify-content-end  mt-2">
+                <i
+                class="fa-brands fa-facebook border p-2 rounded swiper-slide mx-2"
+              ></i>
+              <i
+                class="fa-brands fa-twitter border p-2 rounded swiper-slide mx-2"
+              ></i>
+              <i
+                class="fa-brands fa-instagram border p-2 rounded swiper-slide mx-2"
+              ></i>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="to-top position-fixed end-0 bottom-0 me-4 mb-4 bg-success text-white p-2 rounded">
+        <a href="#top" class="text-white"> <i class="fa-solid fa-arrow-up"></i></a>
+       </div>
+      <!-- start Footer -->
+    </main>  
+
+
+    <!-- Link cdn swiper js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    <script src="js/swiper-bundle.min.js"></script> 
+
+    <!-- BootStrap JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="//g.tutorialjinni.com/mojoaxel/bootstrap-select-country/dist/js/bootstrap-select-country.min.js"></script>
+
+    <!-- Main JavaScript -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
